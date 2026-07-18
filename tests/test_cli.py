@@ -1,10 +1,10 @@
 import pytest
 from unittest.mock import patch, MagicMock
 from click.testing import CliRunner
-from name_of_the_machina.cli import run
+from machina_discens.cli import run
 
-@patch('name_of_the_machina.cli.fileinput')
-@patch('name_of_the_machina.machine.machine')
+@patch('machina_discens.cli.fileinput')
+@patch('machina_discens.machine.machine')
 def test_cli_run_success(mock_machine, mock_fileinput):
     # Mocking standard input pipeline
     mock_fileinput.input.return_value = ["user: hello\n"]
