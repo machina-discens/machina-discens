@@ -1,0 +1,32 @@
+[build-system]
+requires = ["setuptools==82.0.1"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "name-of-the-machina"
+version = "0.0.1"
+authors = [
+    {name="Machina Ratiocinatrix", email="machina.ratio@gmail.com"},
+    {name="Alexander Fedotov", email="alex.fedotov@aol.com"}
+]
+description = "Name-of-the-Machina ..."
+readme = "README.md"
+requires-python = ">=3.10"
+classifiers=[
+        "Programming Language :: Python :: 3",
+        "License :: OSI Approved :: MIT License",
+        "Operating System :: OS Independent",
+]
+keywords = ["name-of-the-machina"]
+dependencies = [
+    "pyyaml == 6.0.3"
+]
+
+[project.scripts]
+name-of-the-machina = "name_of_the_machina.cli:run"
+
+[project.urls]
+"Homepage" = "https://github.com/name-of-the-machina/name-of-the-machina"
+
+[dependency-groups]
+dev = ["pytest>=8.0.0"]
